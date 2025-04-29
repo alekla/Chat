@@ -19,10 +19,6 @@ let package = Package(
             from: "3.0.0"
         ),
         .package(
-            url: "https://github.com/exyte/ActivityIndicatorView",
-            from: "1.0.0"
-        ),
-        .package(
            url: "https://github.com/Giphy/giphy-ios-sdk",
            exact: "2.2.12"
         ),
@@ -32,7 +28,6 @@ let package = Package(
             name: "ExyteChat",
             dependencies: [
                 .product(name: "ExyteMediaPicker", package: "MediaPicker"),
-                .product(name: "ActivityIndicatorView", package: "ActivityIndicatorView"),
                 .product(name: "GiphyUISDK", package: "giphy-ios-sdk")
             ],
             swiftSettings: [
